@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ade Ziyana Walidah Fatma | Data Analyst & EdTech Portfolio</title>
+    <title>Ade Ziyana Walidah Fatma, S.Pd. | Data Analyst & EdTech Portfolio</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome Icons -->
@@ -11,48 +12,8 @@
     <!-- Google Fonts: Inter & Outfit -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#eff6ff',
-                            100: '#dbeafe',
-                            200: '#bfdbfe',
-                            300: '#93c5fd',
-                            400: '#60a5fa',
-                            500: '#3b82f6',
-                            600: '#2563eb', // Electric Blue
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#1e3a8a',
-                            950: '#0f172a', // Deep Blue / Dark Slate
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Outfit', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
-        }
-        h1, h2, h3, h4, .font-heading {
-            font-family: 'Outfit', sans-serif;
-        }
-        .placeholder-badge {
-            background-color: rgba(37, 99, 235, 0.1);
-            border: 2px dashed #2563eb;
-            color: #1d4ed8;
-        }
-    </style>
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
 
@@ -111,13 +72,16 @@
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-medium">
                         <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
-                        Data Analyst & Educational Technology
+                        Data Analyst & Educational Technology Specialist
                     </div>
+                    
                     <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading tracking-tight text-white leading-tight">
                         Ade Ziyana <br class="hidden sm:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-200">Walidah Fatma</span>
                     </h1>
-                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
-                        Lulusan Pendidikan Matematika Universitas PGRI Semarang (<strong class="text-white">IPK 3.82 / 4.00 - Cum Laude</strong>) yang berfokus pada <strong class="text-blue-300">Data Analysis, Machine Learning, BigQuery, SQL</strong>, dan <strong class="text-blue-300">Pengembangan Media Game Pembelajaran Interaktif</strong>.
+                    
+                    <!-- Deskripsi Rata Kanan-Kiri & Bahasa Natural -->
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed text-justify">
+                        Lulusan <strong class="text-white">S1 Pendidikan Matematika Universitas PGRI Semarang (IPK 3.82 / Cum Laude)</strong> dengan ketertarikan kuat pada pengolahan data dan teknologi. Terbiasa mengolah data menggunakan <strong class="text-blue-300">SQL, BigQuery, dan Python</strong>, merancang alur <strong class="text-blue-300">Machine Learning</strong>, serta membangun dashboard visual yang intuitif. Memiliki pengalaman mengembangkan media edukasi berbasis game terintegrasi sistem basis data yang telah terpublikasi secara ilmiah.
                     </p>
                     
                     <!-- Action Buttons -->
@@ -128,45 +92,38 @@
                         <a href="#contact" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold transition flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
                         </a>
-                        <a href="#contact" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-semibold transition shadow-md flex items-center gap-2 text-sm sm:text-base">
+                        <a href="Assets/CV ATS_Ade_Ziyana_Walidah_Fatma (1).pdf" download="CV_Ade_Ziyana_Walidah_Fatma.pdf" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-semibold transition shadow-md flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-solid fa-file-arrow-down"></i> Unduh CV
                         </a>
                     </div>
 
-                    <!-- Highlight Badges -->
+                    <!-- Highlight Badges (Disesuaikan dengan Prestasi & Akurasi Data) -->
                     <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left">
                         <div>
                             <span class="block text-2xl font-bold font-heading text-blue-400">3.82</span>
                             <span class="text-xs text-slate-400">IPK / Cum Laude</span>
                         </div>
                         <div>
-                            <span class="block text-2xl font-bold font-heading text-blue-400">3,000+</span>
+                            <span class="block text-2xl font-bold font-heading text-blue-400">3.000+</span>
                             <span class="text-xs text-slate-400">Dokumen Arsip Diolah</span>
                         </div>
                         <div>
-                            <span class="block text-2xl font-bold font-heading text-blue-400">20+</span>
-                            <span class="text-xs text-slate-400">Publikasi Media Masa</span>
+                            <span class="block text-2xl font-bold font-heading text-blue-400">7 Karya</span>
+                            <span class="text-xs text-slate-400">Terdaftar HAKI</span>
                         </div>
                         <div>
                             <span class="block text-2xl font-bold font-heading text-blue-400">SINTA 4</span>
-                            <span class="text-xs text-slate-400">Publikasi Jurnal</span>
+                            <span class="text-xs text-slate-400">Publikasi Jurnal Ilmiah</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Profile Photo Area / Placeholder -->
+                <!-- Profile Photo Area -->
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="relative w-72 sm:w-80 lg:w-96">
                         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-600 to-cyan-400 blur-xl opacity-50 animate-pulse"></div>
                         <div class="relative rounded-2xl bg-slate-900 border-2 border-slate-700 overflow-hidden shadow-2xl p-4 text-center">
-                            
-                            <!-- UPLOAD PLACEHOLDER BOX -->
-                            <div class="placeholder-badge rounded-xl p-8 flex flex-col items-center justify-center min-h-[320px] transition hover:bg-blue-500/10 cursor-pointer group" onclick="alert('Petunjuk: Ganti tag <img> di bawah ini dengan URL foto Anda.')">
-                                <i class="fa-solid fa-camera-retro text-4xl text-blue-500 mb-3 group-hover:scale-110 transition"></i>
-                                <span class="font-bold text-blue-900 text-sm mb-1">[FOTO PROFIL / HEADER UTAMA]</span>
-                                <p class="text-xs text-slate-600">Ganti foto diri Anda di sini (misal: Foto wisuda / profesional formal)</p>
-                                <span class="mt-4 px-3 py-1 rounded-md bg-blue-600 text-white text-[10px] font-mono">"Assets\Fatma.png"</span>
-                            </div>
+                            <img src="Assets/Fatma.png" alt="Ade Ziyana Walidah Fatma" class="w-full h-auto rounded-xl object-cover shadow-lg">
 
                             <div class="mt-4 text-left px-2">
                                 <h3 class="font-bold text-white text-base">Ade Ziyana Walidah Fatma</h3>
@@ -208,11 +165,13 @@
                         <h2 class="text-3xl font-bold font-heading text-slate-900">Tentang Saya</h2>
                         <p class="text-sm text-blue-600 font-semibold mt-1">Profile & Strategic Mindset</p>
                         
-                        <!-- Logo Kampus Placeholder -->
+                        <!-- Logo Kampus (Tampil Utuh & Proporsional) -->
                         <div class="mt-6 p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-center space-x-3">
-                            <div class="placeholder-badge w-12 h-12 rounded-full flex items-center justify-center text-xs font-bold text-center">
-                                [LOGO]
+                            <!-- Kontainer Pembungkus Logo -->
+                            <div class="w-12 h-12 rounded-lg bg-white p-1 border border-slate-200 flex items-center justify-center shrink-0 shadow-sm">
+                                <img src="Assets/logo.png" alt="Logo Universitas PGRI Semarang" class="w-full h-full object-contain">
                             </div>
+                            
                             <div class="text-left text-xs">
                                 <p class="font-bold text-slate-800">Universitas PGRI Semarang</p>
                                 <p class="text-slate-500">S1 Pendidikan Matematika</p>
@@ -222,14 +181,14 @@
                     </div>
 
                     <div class="lg:col-span-8 text-slate-600 leading-relaxed space-y-4">
-                        <p class="text-base sm:text-lg text-slate-700">
-                            <strong>Halo! Saya Ade Ziyana Walidah Fatma</strong>, lulusan Pendidikan Matematika yang memiliki keahlian kuat dalam <strong>Data Analysis, SQL, dan Pemodelan Statistik</strong>.
+                        <p class="text-base sm:text-lg text-slate-700 text-justify">
+                            <strong>Halo! Saya Ade Ziyana Walidah Fatma</strong>, lulusan Pendidikan Matematika yang memiliki ketertarikan kuat dalam <strong>Data Analysis, SQL, dan Pemodelan Statistik</strong>.
                         </p>
-                        <p class="text-sm sm:text-base">
-                            Memiliki pengalaman langsung dalam pemrosesan data end-to-end, alur kerja <strong>Machine Learning</strong>, serta pembuatan dashboard interaktif menggunakan <strong>Looker Studio, Power BI, Tableau, dan Python</strong>. 
+                        <p class="text-sm sm:text-base text-justify leading-relaxed">
+                            Terbiasa mengolah data secara menyeluruh (end-to-end), mulai dari pembersihan data, eksplorasi alur kerja <strong>Machine Learning</strong>, hingga menyajikannya dalam bentuk dashboard visual yang intuitif menggunakan <strong>Looker Studio, Power BI, Tableau, dan Python</strong>.
                         </p>
-                        <p class="text-sm sm:text-base">
-                            Terbukti mampu mentransformasi kumpulan data kompleks menjadi wawasan yang dapat ditindaklanjuti (*actionable insights*), dikombinasikan dengan latar belakang pengembangan media teknologi edukasi (Educational Games), optimasi query basis data (BigQuery), dan pengarsipan data digital. Berambisi untuk memanfaatkan pemikiran analitis dan keterampilan kuantitatif dalam mendukung pengambilan keputusan berbasis data (*data-driven decision-making*).
+                        <p class="text-sm sm:text-base text-justify leading-relaxed">
+                            Memiliki keahlian dalam menerjemahkan data kompleks menjadi wawasan strategis yang praktis dan bernilai guna. Latar belakang ini diperkuat dengan pengalaman mengembangkan media teknologi edukasi (Educational Games), efisiensi kueri basis data (BigQuery), serta pengelolaan pengarsipan digital. Saya berfokus menerapkan logika berpikir analitis dan pendekatan kuantitatif untuk mendukung pengambilan keputusan yang tepat berbasis data.
                         </p>
 
                         <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 font-medium text-xs sm:text-sm text-slate-800">
@@ -249,137 +208,128 @@
             </div>
         </section>
 
-        <!-- 2. INTERNSHIP EXPERIENCES -->
-        <section id="internship" class="scroll-mt-20">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
-                <div>
-                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Pengalaman Magang</span>
-                    <h2 class="text-3xl font-bold font-heading text-slate-900 mt-1">Internship Experiences</h2>
-                </div>
-                <p class="text-sm text-slate-500 mt-2 md:mt-0">Pengalaman profesional di instansi pemerintahan dan institusi pendidikan</p>
-            </div>
+       <!-- INTERNSHIP EXPERIENCES SECTION -->
+            <div class="space-y-6">
 
-            <div class="space-y-8">
-                
-                <!-- Tax Internship KPP Pratama -->
-                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-lg hover:shadow-xl transition">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                        <div class="lg:col-span-8 space-y-4">
-                            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
-                                <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Tax Administration Intern</h3>
-                                    <p class="text-sm font-semibold text-blue-600">KPP Pratama Semarang Tengah (Kementerian Keuangan RI)</p>
-                                </div>
-                                <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-200">
-                                    09/2025 - 10/2025 | Semarang
-                                </span>
+                <!-- 1. KPP PRATAMA (TAX ADMINISTRATION INTERN) -->
+                <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-8 space-y-4">
+                        <!-- Header Jabatan & Tanggal -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Tax Administration Intern</h3>
+                                <p class="text-sm font-semibold text-blue-600">KPP Pratama Semarang Tengah (Kementerian Keuangan RI)</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-200">
+                                09/2025 - 10/2025 | Semarang
+                            </span>
+                        </div>
+
+                        <!-- Poin Role Overview & Key Contributions (Justify & Rapi) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+                            <!-- Role Overview -->
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2.5 flex items-center gap-2 text-sm">
+                                    <i class="fa-solid fa-briefcase text-blue-600"></i> Role Overview:
+                                </h4>
+                                <ul class="list-disc list-outside ml-4 space-y-2 text-slate-600 leading-relaxed text-justify">
+                                    <li>Membantu operasional administrasi perpajakan di Seksi Pengawasan, Pemeriksaan, dan Penagihan serta Seksi Pelayanan.</li>
+                                    <li>Memproses dan memverifikasi faktur pajak & dokumen kepatuhan Wajib Pajak.</li>
+                                    <li>Mengelola alur kerja pengarsipan dokumen fisik dan digital.</li>
+                                </ul>
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
-                                <div>
-                                    <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                                        <i class="fa-solid fa-briefcase text-blue-600"></i> Role Overview:
-                                    </h4>
-                                    <ul class="list-disc list-inside space-y-1.5 text-slate-600">
-                                        <li>Membantu operasional administrasi perpajakan di Seksi Pengawasan, Pemeriksaan, dan Penagihan serta Seksi Pelayanan.</li>
-                                        <li>Memproses dan memverifikasi faktur pajak & dokumen kepatuhan Wajib Pajak.</li>
-                                        <li>Mengelola alur kerja pengarsipan dokumen fisik dan digital.</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                                        <i class="fa-solid fa-star text-amber-500"></i> Key Contributions:
-                                    </h4>
-                                    <ul class="list-disc list-inside space-y-1.5 text-slate-600">
-                                        <li>Mengelola <strong>3.000+ dokumen arsip STP</strong> & memilah Surat Paksa secara sistematis.</li>
-                                        <li>Otomatisasi penomoran & indeks arsip menggunakan rumus Excel VLOOKUP.</li>
-                                        <li>Digitalisasi dokumen pajak ke Excel menggunakan script pemindaian Python.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2 pt-2">
-                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">Microsoft Excel</span>
-                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">Python Scripting</span>
-                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">BigQuery / Google Workspace</span>
+                            <!-- Key Contributions -->
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2.5 flex items-center gap-2 text-sm">
+                                    <i class="fa-solid fa-star text-amber-500"></i> Key Contributions:
+                                </h4>
+                                <ul class="list-disc list-outside ml-4 space-y-2 text-slate-600 leading-relaxed text-justify">
+                                    <li>Mengelola <strong class="text-slate-800">3.000+ dokumen arsip STP</strong> & memilah Surat Paksa secara sistematis.</li>
+                                    <li>Otomatisasi penomoran & indeks arsip menggunakan rumus Excel VLOOKUP.</li>
+                                    <li>Digitalisasi dokumen pajak ke Excel menggunakan script pemindaian Python.</li>
+                                </ul>
                             </div>
                         </div>
 
-                        <!-- Image Placeholder Area -->
-                        <div class="lg:col-span-4 flex flex-col justify-center space-y-3">
-                            <div class="placeholder-badge rounded-xl p-4 text-center cursor-pointer hover:bg-blue-100/50 transition" onclick="alert('Petunjuk Foto: Upload foto ruang kerja / pengarsipan KPP Pratama')">
-                                <i class="fa-solid fa-image text-2xl text-blue-600 mb-1"></i>
-                                <p class="text-xs font-bold text-blue-900">[FOTO DOKUMENTASI MAGANG KPP]</p>
-                                <span class="text-[10px] text-slate-500">Foto Kegiatan Pengarsipan Dokumentasi</span>
-                            </div>
-                            <div class="placeholder-badge rounded-xl p-4 text-center cursor-pointer hover:bg-blue-100/50 transition" onclick="alert('Petunjuk Foto: Upload foto sertifikat magang Kemenkeu')">
-                                <i class="fa-solid fa-file-certificate text-2xl text-blue-600 mb-1"></i>
-                                <p class="text-xs font-bold text-blue-900">[FOTO SERTIFIKAT MAGANG KEMENKEU]</p>
-                                <span class="text-[10px] text-slate-500">Sertifikat Resmi KPP Pratama</span>
-                            </div>
+                        <!-- Tech Stack / Skill Badges -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">Microsoft Excel</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">Python Scripting</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">BigQuery / Google Workspace</span>
+                        </div>
+                    </div>
+
+                    <!-- Image Area Magang (5:4 Landscape) -->
+                    <div class="lg:col-span-4 flex flex-col justify-center space-y-3">
+                        <img src="Assets/kemenkeuarsip.jpeg" alt="Dokumentasi Magang KPP Pratama" class="w-full h-48 sm:h-52 object-cover rounded-xl border border-slate-200 shadow-sm">
+                        
+                        <div class="w-full h-48 sm:h-52 rounded-xl border border-slate-200 shadow-sm overflow-hidden bg-slate-100 flex items-center justify-center p-1">
+                            <img src="Assets/sertifkemenkeu.jpg" alt="Sertifikat Magang Kemenkeu" class="w-full h-full object-contain rounded-lg">
                         </div>
                     </div>
                 </div>
 
-                <!-- Teaching Intern SMP N 9 Semarang -->
-                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-lg hover:shadow-xl transition">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                        <div class="lg:col-span-8 space-y-4">
-                            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
-                                <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Teaching Intern (PPL)</h3>
-                                    <p class="text-sm font-semibold text-blue-600">SMP Negeri 9 Semarang</p>
-                                </div>
-                                <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-200">
-                                    04/2025 - 10/2025 | Semarang
-                                </span>
+
+                <!-- 2. SMP NEGERI 9 SEMARANG (TEACHING INTERN PPL) -->
+                <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-8 space-y-4">
+                        <!-- Header Jabatan & Tanggal -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Teaching Intern (PPL)</h3>
+                                <p class="text-sm font-semibold text-blue-600">SMP Negeri 9 Semarang</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-200">
+                                04/2025 - 10/2025 | Semarang
+                            </span>
+                        </div>
+
+                        <!-- Poin Role Overview & Key Contributions (Justify & Rapi) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+                            <!-- Role Overview -->
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2.5 flex items-center gap-2 text-sm">
+                                    <i class="fa-solid fa-chalkboard-user text-blue-600"></i> Role Overview:
+                                </h4>
+                                <ul class="list-disc list-outside ml-4 space-y-2 text-slate-600 leading-relaxed text-justify">
+                                    <li>Merancang instruksi Matematika interaktif & modul bab Persamaan Garis Lurus kelas 8.</li>
+                                    <li>Mengatasi miskonsepsi siswa mengenai Gradien & Y-intercept.</li>
+                                    <li>Mengelola ruang kelas & evaluasi asesmen pembelajaran.</li>
+                                </ul>
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
-                                <div>
-                                    <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                                        <i class="fa-solid fa-chalkboard-user text-blue-600"></i> Role Overview:
-                                    </h4>
-                                    <ul class="list-disc list-inside space-y-1.5 text-slate-600">
-                                        <li>Merancang instruksi Matematika interaktif & modul bab Persamaan Garis Lurus kelas 8.</li>
-                                        <li>Mengatasi miskonsepsi siswa mengenai Gradien & Y-intercept.</li>
-                                        <li>Mengelola ruang kelas & evaluasi asesmen pembelajaran.</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                                        <i class="fa-solid fa-lightbulb text-amber-500"></i> Key Contributions:
-                                    </h4>
-                                    <ul class="list-disc list-inside space-y-1.5 text-slate-600">
-                                        <li>Menerapkan metode <strong>Game-Based Learning (GBL)</strong> untuk meningkatkan pemahaman siswa.</li>
-                                        <li>Melakukan observasi terstruktur guna mengidentifikasi learning gap.</li>
-                                        <li>Mengintegrasikan software interaktif <strong>GeoGebra & Canva</strong>.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2 pt-2">
-                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">GeoGebra</span>
-                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">Canva Educational</span>
-                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">MS Excel</span>
+                            <!-- Key Contributions -->
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2.5 flex items-center gap-2 text-sm">
+                                    <i class="fa-solid fa-lightbulb text-amber-500"></i> Key Contributions:
+                                </h4>
+                                <ul class="list-disc list-outside ml-4 space-y-2 text-slate-600 leading-relaxed text-justify">
+                                    <li>Menerapkan metode <strong class="text-slate-800">Game-Based Learning (GBL)</strong> untuk meningkatkan pemahaman siswa.</li>
+                                    <li>Melakukan observasi terstruktur guna mengidentifikasi learning gap.</li>
+                                    <li>Mengintegrasikan software interaktif <strong class="text-slate-800">GeoGebra & Canva</strong>.</li>
+                                </ul>
                             </div>
                         </div>
 
-                        <!-- Image Placeholders -->
-                        <div class="lg:col-span-4 flex flex-col justify-center space-y-3">
-                            <div class="placeholder-badge rounded-xl p-6 text-center cursor-pointer hover:bg-blue-100/50 transition">
-                                <i class="fa-solid fa-chalkboard-teacher text-3xl text-blue-600 mb-1"></i>
-                                <p class="text-xs font-bold text-blue-900">[FOTO MENGAJAR SMPN 9 SEMARANG]</p>
-                                <span class="text-[10px] text-slate-500">Dokumentasi Mengajar & Interaksi Siswa</span>
-                            </div>
+                        <!-- Tech Stack / Skill Badges -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">GeoGebra</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">Canva Educational</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono">MS Excel</span>
                         </div>
+                    </div>
+
+                    <!-- Image Area Mengajar (5:4 Landscape) -->
+                    <div class="lg:col-span-4 flex items-center justify-center">
+                        <img src="Assets/mengajar.jpg" alt="Dokumentasi Mengajar SMPN 9 Semarang" class="w-full h-48 sm:h-52 object-cover rounded-xl border border-slate-200 shadow-sm">
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- 3. WORK EXPERIENCE -->
+       <!-- 3. WORK EXPERIENCE -->
         <section id="experience" class="scroll-mt-20">
             <div class="bg-gradient-to-r from-slate-900 to-blue-950 rounded-3xl p-8 sm:p-10 text-white shadow-xl">
                 <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
@@ -395,21 +345,24 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
                     <div class="lg:col-span-8 space-y-4 text-sm text-slate-300">
-                        <p>
+                        <p class="text-justify leading-relaxed">
                             Memberikan bimbingan privat matematika kustom untuk siswa tingkat dasar dan menengah dengan pendekatan pemahaman konsep secara mendalam, visual, dan menyenangkan.
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                            <!-- Tugas Utama -->
                             <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
                                 <h4 class="font-bold text-white mb-2 text-xs uppercase tracking-wider text-blue-400">Tugas Utama</h4>
-                                <ul class="list-disc list-inside space-y-1 text-xs">
+                                <ul class="list-disc list-outside ml-4 space-y-1.5 text-xs text-slate-300 text-justify leading-relaxed">
                                     <li>Merancang materi privat berbasis konsep visual.</li>
                                     <li>Menggunakan GeoGebra untuk materi Geometri & Grafik.</li>
                                     <li>Evaluasi diagnostik perkembangan siswa secara berkala.</li>
                                 </ul>
                             </div>
+
+                            <!-- Pencapaian Utama -->
                             <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
                                 <h4 class="font-bold text-white mb-2 text-xs uppercase tracking-wider text-blue-400">Pencapaian Utama</h4>
-                                <ul class="list-disc list-inside space-y-1 text-xs">
+                                <ul class="list-disc list-outside ml-4 space-y-1.5 text-xs text-slate-300 text-justify leading-relaxed">
                                     <li>Integrasi kuis tergamifikasi menggunakan Quizizz.</li>
                                     <li>Meningkatkan partisipasi & kecepatan jawab siswa.</li>
                                     <li>Menyusun modul soal persiapan ujian berbasis Kurikulum.</li>
@@ -418,24 +371,20 @@
                         </div>
                     </div>
 
-                    <!-- Image Placeholder Tutor -->
-                    <div class="lg:col-span-4 flex items-center">
-                        <div class="placeholder-badge border-blue-400/40 text-blue-300 rounded-2xl p-6 text-center w-full bg-slate-900/50">
-                            <i class="fa-solid fa-graduation-cap text-3xl text-blue-400 mb-2"></i>
-                            <p class="text-xs font-bold text-white">[FOTO BIMBINGAN / MENTORING TUTOR]</p>
-                            <span class="text-[10px] text-slate-400">Dokumentasi saat Bimbingan Privat</span>
-                        </div>
+                    <!-- Image Area Tutor Privat (Foto Mengajar Rasio 5:4 Landscape) -->
+                    <div class="lg:col-span-4 flex items-center justify-center">
+                        <img src="Assets/ngajar.jpeg" alt="Dokumentasi Bimbingan Privat Matematika" class="w-full h-48 sm:h-52 object-cover rounded-2xl border border-slate-700/60 shadow-lg">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. ACADEMIC & PROJECTS (TAB FILTERABLE) -->
+       <!-- 4. ACADEMIC & PROJECTS (TAB FILTERABLE) -->
         <section id="projects" class="scroll-mt-20">
             <div class="text-center max-w-3xl mx-auto mb-10">
                 <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Portofolio & Proyek</span>
                 <h2 class="text-3xl sm:text-4xl font-bold font-heading text-slate-900 mt-1">Featured Academic & Analytics Projects</h2>
-                <p class="text-slate-600 text-sm mt-2">Pilih kategori di bawah untuk melihat detail proyek Machine Learning, Data Analytics, Web Game, dan UI/UX Design.</p>
+                <p class="text-slate-600 text-sm mt-2 text-center">Pilih kategori di bawah untuk melihat detail proyek Machine Learning, Data Analytics, Web Game, dan UI/UX Design.</p>
             </div>
 
             <!-- Tab Buttons -->
@@ -454,32 +403,24 @@
                 <div class="project-card thesis bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-lg flex flex-col justify-between">
                     <div>
                         <div class="p-6 bg-slate-900 text-white relative">
-                            <span class="px-2.5 py-1 rounded bg-blue-600 text-[10px] font-bold uppercase tracking-wider">Skripsi & Jurnal SINTA 2</span>
+                            <span class="px-2.5 py-1 rounded bg-blue-600 text-[10px] font-bold uppercase tracking-wider">Skripsi & Jurnal SINTA 4</span>
                             <h3 class="text-xl font-bold font-heading mt-2">Petualangan Telur Dinosaurus</h3>
                             <p class="text-xs text-slate-300 mt-1">Web-Based Educational Game for Linear Equations</p>
                         </div>
                         <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-600">
-                            <p>
-                                Mengembangkan media pembelajaran game berbasis web HTML5/p5.js terintegrasi <strong>Google Sheets API</strong> untuk pencatatan skor siswa secara realtime. Hasil penelitian ini telah diterbitkan di <strong>Jurnal Cendekia (SINTA 2)</strong>.
+                            <p class="text-justify leading-relaxed">
+                                Mengembangkan media pembelajaran game berbasis web HTML5/p5.js terintegrasi <strong>Google Sheets API</strong> untuk pencatatan skor siswa secara realtime. Hasil penelitian ini telah diterbitkan di <strong>Jurnal Cendekia (SINTA 4)</strong>.
                             </p>
-                            <!-- Images Area -->
-                            <div class="grid grid-cols-2 gap-2 pt-2">
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-solid fa-code text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[SCRIPT VS CODE]</p>
-                                    <span class="text-[9px] text-slate-500">Source Code Game</span>
-                                </div>
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-solid fa-mobile-screen-button text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[MOBILE GAME UI]</p>
-                                    <span class="text-[9px] text-slate-500">Tampilan Game HP</span>
-                                </div>
+                            <!-- Images Area (Format 5:4 Landscape) -->
+                            <div class="grid grid-cols-2 gap-3 pt-2">
+                                <img src="Assets\scriptcode.png" alt="Source Code Game" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
+                                <img src="Assets\game.jpeg" alt="Tampilan Game Mobile" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
                             </div>
                         </div>
                     </div>
                     <div class="p-6 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
                         <span class="text-xs font-mono text-slate-500">HTML5, JS, p5.js, Sheets API</span>
-                        <a href="https://jurnal.syntaxliterate.co.id" target="_blank" class="text-xs text-blue-600 font-bold hover:underline">Lihat Publikasi &rarr;</a>
+                        <a href="https://j-cup.org/index.php/cendekia/article/view/4935" target="_blank" class="text-xs text-blue-600 font-bold hover:underline">Lihat Publikasi &rarr;</a>
                     </div>
                 </div>
 
@@ -492,21 +433,13 @@
                             <p class="text-xs text-slate-300 mt-1">Retail Analytics & Predictive Targeting Pipeline</p>
                         </div>
                         <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-600">
-                            <p>
+                            <p class="text-justify leading-relaxed">
                                 Membangun end-to-end Machine Learning pipeline di Python (Pandas, Scikit-learn). Menerapkan <strong>Unsupervised Learning (Clustering)</strong> untuk mengelompokkan perilaku pembeli dan <strong>Supervised Learning (Classification)</strong> untuk prediksi target pemasaran.
                             </p>
-                            <!-- Images Area -->
-                            <div class="grid grid-cols-2 gap-2 pt-2">
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-solid fa-chart-simple text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[SCREENSHOT EDA & HISTOGRAM]</p>
-                                    <span class="text-[9px] text-slate-500">Visualisasi EDA</span>
-                                </div>
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-solid fa-border-all text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[CORRELATION HEATMAP]</p>
-                                    <span class="text-[9px] text-slate-500">Matriks Korelasi Fitur</span>
-                                </div>
+                            <!-- Images Area (Format 5:4 Landscape) -->
+                            <div class="grid grid-cols-2 gap-3 pt-2">
+                                <img src="Assets\mleda.png" alt="Visualisasi EDA" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
+                                <img src="Assets\mlheatmap.png" alt="Matriks Korelasi Fitur" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
                             </div>
                         </div>
                     </div>
@@ -525,21 +458,13 @@
                             <p class="text-xs text-slate-300 mt-1">Exploratory Data Analysis & Streamlit Web App</p>
                         </div>
                         <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-600">
-                            <p>
+                            <p class="text-justify leading-relaxed">
                                 Analisis pola permintaan penyewaan sepeda berdasarkan musim, cuaca, dan jam operasional. Dilengkapi dengan <strong>Dashboard Interaktif Looker Studio</strong> dan aplikasi web <strong>Streamlit</strong>.
                             </p>
-                            <!-- Images Area -->
-                            <div class="grid grid-cols-2 gap-2 pt-2">
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-solid fa-chart-pie text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[LOOKER DASHBOARD]</p>
-                                    <span class="text-[9px] text-slate-500">Interactive Dashboard</span>
-                                </div>
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-solid fa-laptop text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[STREAMLIT APP]</p>
-                                    <span class="text-[9px] text-slate-500">Aplikasi Web Streamlit</span>
-                                </div>
+                            <!-- Images Area (Format 5:4 Landscape) -->
+                            <div class="grid grid-cols-2 gap-3 pt-2">
+                                <img src="Assets\dashboard.png" alt="Interactive Dashboard" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
+                                <img src="Assets\streamlit.png" alt="Aplikasi Web Streamlit" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
                             </div>
                         </div>
                     </div>
@@ -558,21 +483,13 @@
                             <p class="text-xs text-slate-300 mt-1">High-Fidelity Wireframing & Prototype in Figma</p>
                         </div>
                         <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-600">
-                            <p>
+                            <p class="text-justify leading-relaxed">
                                 Merancang antarmuka aplikasi NFT Marketplace (Dark Mode, Web3 Wallet integration) serta Platform E-Learning Interaktif berbasis Web untuk mendukung Game-Based Learning.
                             </p>
-                            <!-- Images Area -->
-                            <div class="grid grid-cols-2 gap-2 pt-2">
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-brands fa-figma text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[FIGMA NFT MOBILE]</p>
-                                    <span class="text-[9px] text-slate-500">Design System NFT</span>
-                                </div>
-                                <div class="placeholder-badge p-4 rounded-lg text-center cursor-pointer">
-                                    <i class="fa-brands fa-figma text-blue-600 text-lg mb-1"></i>
-                                    <p class="text-[11px] font-bold text-blue-900">[FIGMA E-LEARNING]</p>
-                                    <span class="text-[9px] text-slate-500">Design E-Learning Web</span>
-                                </div>
+                            <!-- Images Area (Format 5:4 Landscape) -->
+                            <div class="grid grid-cols-2 gap-3 pt-2">
+                                <img src="Assets\nft.png" alt="Design System NFT" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
+                                <img src="Assets\elearning (2).png" alt="Design E-Learning Web" class="w-full aspect-[5/4] object-cover rounded-xl border border-slate-200 shadow-sm">
                             </div>
                         </div>
                     </div>
@@ -654,74 +571,209 @@
         </section>
 
         <!-- 6. CERTIFICATES & INTELLECTUAL PROPERTY (HAKI) -->
-        <section id="certificates" class="scroll-mt-20">
-            <div class="text-center max-w-2xl mx-auto mb-10">
+        <section id="certificates" class="scroll-mt-20 space-y-12">
+            <div class="text-center max-w-2xl mx-auto mb-6">
                 <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Kualifikasi Resmi</span>
                 <h2 class="text-3xl font-bold font-heading text-slate-900 mt-1">Sertifikat Kompetensi & Hak Cipta (HAKI)</h2>
-                <p class="text-slate-500 text-sm mt-1">Dicoding, Kementerian Keuangan, Kementerian Hukum & HAM (HAKI)</p>
+                <p class="text-slate-500 text-sm mt-1">Dicoding Academy, Sertifikasi Robotik, Pelatihan Multimedia, dan Pencatatan HAKI Kemenkumham</p>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                
-                <!-- Dicoding Python -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition">
-                    <i class="fa-solid fa-certificate text-2xl text-blue-600 mb-1"></i>
-                    <p class="text-xs font-bold text-blue-900">[SERTIFIKAT DICODING]</p>
-                    <span class="text-[10px] text-slate-600 block">Memulai Pemrograman Python</span>
+            <!-- 1. KATEGORI: SERTIFIKAT DICODING (Landscape Format - 8 Item) -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-certificate text-blue-600"></i> Sertifikat Dicoding Academy (8 Kelas)
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Ulangi blok ini sebanyak 8 sertifikat Dicoding Anda -->
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding (4).png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Memulai Pemrograman dengan Python</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding (2).png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Memulai Belajar Dasa AI</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding (3).png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Belajar Machine Learning Untuk Pemula</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding.png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Belajar Struktur Query Language (SQL)</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding (5).png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Belajar Dasar Visualisasi Data</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding (6).png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Belajar Strategi Pengembangan Diri</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding (7).png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Belajar Dasar Data Science</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\dicoding (8).png" alt="Sertifikat Dicoding" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Belajar Dasar Manajemen Proyek</p>
+                            <span class="text-[10px] text-blue-600 font-mono">Dicoding Indonesia</span>
+                        </div>
+                    </div>
+                    
+                    <!-- (Tambahkan kartu lainnya hingga 8 item dengan struktur yang sama) -->
                 </div>
+            </div>
 
-                <!-- Dicoding ML -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition">
-                    <i class="fa-solid fa-certificate text-2xl text-blue-600 mb-1"></i>
-                    <p class="text-xs font-bold text-blue-900">[SERTIFIKAT DICODING]</p>
-                    <span class="text-[10px] text-slate-600 block">Belajar Machine Learning</span>
+            <!-- 2. KATEGORI: SURAT PENCATATAN CIPTAAN HAKI (Portrait Format - 7 Item) -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-copyright text-amber-600"></i> Surat Pencatatan Ciptaan HAKI Kemenkumham (7 Karya)
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Ulangi blok ini sebanyak 7 HAKI Anda -->
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1/1.414] bg-amber-50 rounded-lg overflow-hidden flex items-center justify-center p-1 border border-amber-200">
+                            <img src="Assets\HAKI (2).png" alt="Surat HAKI Kemenkumham" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Bianglala Trigonometri</p>
+                            <span class="text-[10px] text-amber-700 font-mono">Pencatatan HAKI</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1/1.414] bg-amber-50 rounded-lg overflow-hidden flex items-center justify-center p-1 border border-amber-200">
+                            <img src="Assets\HAKI.png" alt="Surat HAKI Kemenkumham" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Buku Kompilasi Essay</p>
+                            <span class="text-[10px] text-amber-700 font-mono">Pencatatan HAKI</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1/1.414] bg-amber-50 rounded-lg overflow-hidden flex items-center justify-center p-1 border border-amber-200">
+                            <img src="Assets\HAKI (3).png" alt="Surat HAKI Kemenkumham" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Papan Statistika</p>
+                            <span class="text-[10px] text-amber-700 font-mono">Pencatatan HAKI</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1/1.414] bg-amber-50 rounded-lg overflow-hidden flex items-center justify-center p-1 border border-amber-200">
+                            <img src="Assets\HAKI (4).png" alt="Surat HAKI Kemenkumham" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Galaxy Transboard</p>
+                            <span class="text-[10px] text-amber-700 font-mono">Pencatatan HAKI</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1/1.414] bg-amber-50 rounded-lg overflow-hidden flex items-center justify-center p-1 border border-amber-200">
+                            <img src="Assets\HAKI (5).png" alt="Surat HAKI Kemenkumham" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Geoboard</p>
+                            <span class="text-[10px] text-amber-700 font-mono">Pencatatan HAKI</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1/1.414] bg-amber-50 rounded-lg overflow-hidden flex items-center justify-center p-1 border border-amber-200">
+                            <img src="Assets\HAKI (6).png" alt="Surat HAKI Kemenkumham" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Kotak Perkom</p>
+                            <span class="text-[10px] text-amber-700 font-mono">Pencatatan HAKI</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1/1.414] bg-amber-50 rounded-lg overflow-hidden flex items-center justify-center p-1 border border-amber-200">
+                            <img src="Assets\HAKI (7).png" alt="Surat HAKI Kemenkumham" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Trans Geoboard</p>
+                            <span class="text-[10px] text-amber-700 font-mono">Pencatatan HAKI</span>
+                        </div>
+                    </div>
+                    <!-- (Tambahkan kartu lainnya hingga 7 item dengan struktur yang sama) -->
                 </div>
+            </div>
 
-                <!-- Kemenkeu -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition">
-                    <i class="fa-solid fa-award text-2xl text-blue-600 mb-1"></i>
-                    <p class="text-xs font-bold text-blue-900">[SERTIFIKAT MAGANG KEMENKEU]</p>
-                    <span class="text-[10px] text-slate-600 block">KPP Pratama Semarang</span>
+            <!-- 3. KATEGORI: SERTIFIKAT ROBOTIK & MULTIMEDIA (3 Robotik + 1 Multimedia) -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-microchip text-blue-600"></i> Pelatihan Robotik & Multimedia UPGRIS
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Sertifikat Robotik & Multimedia (Total 4 Item) -->
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\robotik.jpg" alt="Sertifikat Robotik" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Pelatihan Robotik Dasar & Mekanikal</p>
+                            <span class="text-[10px] text-blue-600 font-mono">UKM Robotik UPGRIS</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\KRI.jpg" alt="Sertifikat Robotik" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Panitia KRI</p>
+                            <span class="text-[10px] text-blue-600 font-mono">UKM Robotik UPGRIS</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex flex-col justify-between">
+                        <div class="w-full aspect-[1.414/1] bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                            <img src="Assets\multimedia.png" alt="Sertifikat Robotik" class="w-full h-full object-contain rounded">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="text-xs font-bold text-slate-800">Pelatihan UJIKOM Multimedia</p>
+                            <span class="text-[10px] text-blue-600 font-mono">LPP UPGRIS</span>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Pelatihan Robotik -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition">
-                    <i class="fa-solid fa-microchip text-2xl text-blue-600 mb-1"></i>
-                    <p class="text-xs font-bold text-blue-900">[SERTIFIKAT ROBOTIK]</p>
-                    <span class="text-[10px] text-slate-600 block">Pelatihan Robotik UPGRIS</span>
-                </div>
-
-                <!-- HAKI 1 -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition border-amber-400/50">
-                    <i class="fa-solid fa-copyright text-2xl text-amber-600 mb-1"></i>
-                    <p class="text-xs font-bold text-amber-900">[SURAT HAKI KEMENKUMHAM]</p>
-                    <span class="text-[10px] text-slate-600 block">Bianglala Trigonometri</span>
-                </div>
-
-                <!-- HAKI 2 -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition border-amber-400/50">
-                    <i class="fa-solid fa-copyright text-2xl text-amber-600 mb-1"></i>
-                    <p class="text-xs font-bold text-amber-900">[SURAT HAKI KEMENKUMHAM]</p>
-                    <span class="text-[10px] text-slate-600 block">Kotak Perkom & Geoboard</span>
-                </div>
-
-                <!-- HAKI 3 -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition border-amber-400/50">
-                    <i class="fa-solid fa-copyright text-2xl text-amber-600 mb-1"></i>
-                    <p class="text-xs font-bold text-amber-900">[SURAT HAKI KEMENKUMHAM]</p>
-                    <span class="text-[10px] text-slate-600 block">Media Game Pembelajaran</span>
-                </div>
-
-                <!-- Pelatihan Multimedia -->
-                <div class="placeholder-badge p-4 rounded-xl text-center cursor-pointer hover:bg-blue-100/60 transition">
-                    <i class="fa-solid fa-photo-film text-2xl text-blue-600 mb-1"></i>
-                    <p class="text-xs font-bold text-blue-900">[SERTIFIKAT MULTIMEDIA]</p>
-                    <span class="text-[10px] text-slate-600 block">Pengelolaan Media UPGRIS</span>
-                </div>
-
             </div>
         </section>
-
+        
         <!-- 7. COMPETENCIES -->
         <section id="competencies" class="scroll-mt-20">
             <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl">
@@ -817,7 +869,7 @@
                         </p>
 
                         <div class="space-y-4 text-sm">
-                            <a href="https://www.linkedin.com/in/ade-ziyanawalidah-fatma" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 transition">
+                            <a href="https://www.linkedin.com/in/ade-ziyana-walidah-fatma" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 transition">
                                 <i class="fa-brands fa-linkedin text-xl text-blue-400"></i>
                                 <span>linkedin.com/in/ade-ziyanawalidah-fatma</span>
                             </a>
@@ -866,41 +918,12 @@
     <!-- FOOTER -->
     <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-8 text-center text-xs">
         <div class="max-w-7xl mx-auto px-4 space-y-2">
-            <p>© 2026 Ade Ziyana Walidah Fatma, S.Pd. All Rights Reserved.</p>
-            <p class="text-slate-500">Portofolio Interaktif • Didesain khusus dengan Tema Blue Modern</p>
+            <p>© 2026 Ade Ziyana Walidah Fatma. All Rights Reserved.</p>
+            <p class="text-slate-500">Portofolio</div></p>
         </div>
     </footer>
 
-    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
-    <script>
-        // Mobile Navigation Toggle
-        const btn = id('mobile-menu-btn');
-        const menu = id('mobile-menu');
-        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-
-        function id(e) { return document.getElementById(e); }
-
-        // Project Filtering Function
-        function filterProjects(category) {
-            const cards = document.querySelectorAll('.project-card');
-            const btns = document.querySelectorAll('.project-tab-btn');
-
-            btns.forEach(b => {
-                b.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
-                b.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
-            });
-
-            event.target.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
-            event.target.classList.add('bg-blue-600', 'text-white', 'shadow-md');
-
-            cards.forEach(card => {
-                if (category === 'all' || card.classList.contains(category)) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
