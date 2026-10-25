@@ -1,8 +1,10 @@
-/* Konfigurasi Font & Warna Dasar */
+/* Konfigurasi Font & Warna Dasar Dark Mode */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f8fafc;
-    color: #1e293b;
+    background-color: #0b0914;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, .font-heading {
@@ -14,4 +16,17 @@ h1, h2, h3, h4, .font-heading {
     background-color: rgba(37, 99, 235, 0.1);
     border: 2px dashed #2563eb;
     color: #1d4ed8;
+}
+
+/* Efek Glow pada Avatar */
+.avatar-glow {
+    box-shadow: 0 0 35px rgba(157, 78, 223, 0.4), 0 0 15px rgba(0, 210, 255, 0.3);
+}
+
+/* Efek Teks Gradient Neon (Bebas Warning VS Code) */
+.text-gradient-neon {
+    background: linear-gradient(135deg, #00d2ff 0%, #9d4edf 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
