@@ -1,29 +1,22 @@
-// Konfigurasi Tema Warna Tailwind
+// Tambahkan / Ganti konfigurasi Tailwind pada head HTML Anda
 tailwind.config = {
     theme: {
         extend: {
             colors: {
-                brand: {
-                    50: '#eff6ff',
-                    100: '#dbeafe',
-                    200: '#bfdbfe',
-                    300: '#93c5fd',
-                    400: '#60a5fa',
-                    500: '#3b82f6',
-                    600: '#2563eb', // Electric Blue
-                    700: '#1d4ed8',
-                    800: '#1e40af',
-                    900: '#1e3a8a',
-                    950: '#0f172a', // Deep Blue / Dark Slate
+                dark: {
+                    bg: '#0b0914',       // Background Utama Gelap
+                    card: '#161226',     // Card Gelap Ungu
+                    border: '#272042'    // Border Tipis Ungu
+                },
+                neon: {
+                    purple: '#9d4edf',   // Neon Ungu Utama
+                    cyan: '#00d2ff',     // Neon Cyan / Biru Muda
+                    pink: '#ff007f'      // Pink Aksentuasi
                 }
-            },
-            fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-                heading: ['Outfit', 'sans-serif']
             }
         }
     }
-};
+}
 
 // Fungsi pembantu ambil ID
 function id(e) { 
