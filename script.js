@@ -55,3 +55,36 @@ function filterProjects(category) {
         }
     });
 }
+// Script Otomatis Scroll Reveal Animation
+document.addEventListener("DOMContentLoaded", function () {
+    // Pilih elemen-elemen yang ingin diberi efek animasi scroll
+    const targetElements = document.querySelectorAll(
+        "#about > div, #internship > div, #experience > div, #projects .project-card, #organization > div, #certificates .space-y-4 > div, #keahlian > div, #contact > div"
+    );
+
+    // Tambahkan class 'reveal-on-scroll' ke setiap elemen target secara otomatis
+    targetElements.forEach((el) => {
+        el.classList.add("reveal-on-scroll");
+    });
+
+    // Gunakan Intersection Observer untuk memicu animasi saat elemen masuk viewport
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px 0px -50px 0px", // Animasi terpicu sedikit sebelum elemen mencapai batas bawah layar
+        threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                // Opsional: Hentikan observasi setelah animasi berjalan sekali
+                // observerInstance.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    targetElements.forEach((el) => {
+        observer.observe(el);
+    });
+});
