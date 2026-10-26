@@ -30,3 +30,35 @@ h1, h2, h3, h4, .font-heading {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* ==========================================
+   SCROLL REVEAL ANIMATION (FADE UP)
+   ========================================== */
+
+/* State awal sebelum elemen masuk ke layar (tersembunyi dan sedikit turun ke bawah) */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+/* State saat elemen sudah tersorot di layar (muncul ke posisi normal) */
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ==========================================
+   ANIMASI KELAS KLIK / PRESS (INTERACTIVE ACTIVE STATE)
+   ========================================== */
+
+/* Efek tombol/kotak memendek/menekan ke dalam saat diklik */
+.project-card:active, 
+#internship > div:active, 
+#experience > div:active, 
+#organization > div:active, 
+#certificates .bg-white:active,
+#keahlian .bg-\[\#0A0A12\]:active {
+    transform: scale(0.98) translateY(2px) !important;
+    transition: transform 0.1s ease-in-out !important;
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.2) !important;
+}
