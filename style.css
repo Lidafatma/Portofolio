@@ -1,0 +1,484 @@
+:root{--bg:#07060d;--glass:rgba(255,255,255,.045);--line:rgba(255,255,255,.1);--tx:#eceaf6;--mut:#a29fb8;--pu:#a855f7;--bl:#38bdf8;--pk:#ec4899;--grad:linear-gradient(135deg,#a855f7,#38bdf8)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font:400 16px/1.7 'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 500px at 12% 8%,rgba(168,85,247,.22),transparent 70%),radial-gradient(550px 500px at 92% 30%,rgba(56,189,248,.14),transparent 70%),radial-gradient(600px 500px at 30% 95%,rgba(236,72,153,.1),transparent 70%)}
+h1,h2,h3,h4{font-family:Sora,sans-serif;line-height:1.2;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--bl);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+.glass{background:var(--glass);border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.glow{position:relative;transition:transform .3s,border-color .3s,box-shadow .3s}
+.glow:hover{border-color:rgba(168,85,247,.55);box-shadow:0 0 0 1px rgba(168,85,247,.3),0 12px 50px -12px rgba(168,85,247,.45)}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-h{margin-bottom:40px;max-width:640px}.sec-h h2{font-size:clamp(1.8rem,4vw,2.6rem)}.sec-h p{color:var(--mut);margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:14px;font-weight:700;font-size:.95rem;border:1px solid var(--line);background:var(--glass);transition:.3s;cursor:pointer;color:var(--tx);font-family:inherit}
+.btn:hover{transform:translateY(-2px);border-color:var(--bl)}
+.btn.pri{background:var(--grad);border:0;color:#08060f;box-shadow:0 0 28px rgba(168,85,247,.5)}
+.btn.pri:hover{box-shadow:0 0 42px rgba(56,189,248,.6)}
+.chip{display:inline-block;padding:4px 12px;border-radius:99px;font-size:.78rem;font-weight:500;border:1px solid var(--line);color:var(--mut);background:rgba(255,255,255,.03)}
+.chip.c{color:#7dd3fc;border-color:rgba(56,189,248,.35)}.chip.p{color:#d8b4fe;border-color:rgba(168,85,247,.4)}
+/* nav */
+header{position:fixed;top:14px;left:0;right:0;z-index:50;padding:0 14px}
+.nav{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:8px 10px 8px 14px;border-radius:99px;background:rgba(14,11,26,.6);border:1px solid var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.brand{display:flex;align-items:center;gap:10px;font:700 .95rem Sora}
+.brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid var(--pu)}
+.links{display:flex;gap:2px;align-items:center}
+.links a{padding:7px 12px;border-radius:99px;font-size:.84rem;color:var(--mut);transition:.25s}
+.links a:hover,.links a.on{color:#fff;background:rgba(168,85,247,.2)}
+.links a.cta{background:var(--grad);color:#08060f;font-weight:700}
+#mb{display:none;background:none;border:0;color:#fff;font-size:1.25rem;padding:8px 12px;cursor:pointer}
+@media(max-width:900px){#mb{display:block}.brand span{display:none}.links{position:absolute;top:66px;left:14px;right:14px;flex-direction:column;align-items:stretch;padding:12px;border-radius:22px;background:rgba(14,11,26,.94);border:1px solid var(--line);display:none}.links.open{display:flex}.links a{padding:11px 14px}}
+/* hero */
+#home{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px;position:relative}
+#home::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 420px at var(--mx,70%) var(--my,30%),rgba(56,189,248,.14),transparent 70%);pointer-events:none}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;position:relative}
+.badge{display:inline-flex;align-items:center;gap:9px;padding:7px 16px;border-radius:99px;font-size:.85rem;color:#d8b4fe;border:1px solid rgba(168,85,247,.4);background:rgba(168,85,247,.1)}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--pu);box-shadow:0 0 10px var(--pu);animation:pl 2s infinite}
+@keyframes pl{50%{opacity:.35}}
+h1{font-size:clamp(2.5rem,7vw,4.8rem);font-weight:800;margin:22px 0 18px}
+.lead{color:var(--mut);font-size:1.08rem;max-width:600px}.lead strong{color:#fff}.lead b{color:#d8b4fe;font-weight:500}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{padding:16px;text-align:left}.stat b{font:800 1.7rem Sora;display:block}.stat span{font-size:.8rem;color:var(--mut)}
+.photo{position:relative;max-width:360px;margin:auto}
+.photo::before{content:"";position:absolute;inset:-14px;border-radius:34px;background:conic-gradient(from 0deg,#a855f7,#38bdf8,#ec4899,#a855f7);filter:blur(26px);opacity:.55;animation:spin 9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.photo .glass{position:relative;padding:12px;background:rgba(14,11,26,.85)}
+.photo img{border-radius:14px;width:100%}.photo p{padding:12px 6px 4px}.photo p b{display:block;font-family:Sora}.photo p span{font-size:.82rem;color:#d8b4fe}
+.in{opacity:0;transform:translateY(24px);animation:up .9s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.photo{order:-1;max-width:260px}.stats{grid-template-columns:repeat(2,1fr)}}
+/* marquee */
+.mq{overflow:hidden;border-block:1px solid var(--line);background:rgba(168,85,247,.07);padding:14px 0}
+.mq div{display:flex;gap:46px;width:max-content;animation:mq 32s linear infinite;font:600 .9rem Sora;color:#c4b5fd;white-space:nowrap}
+.mq i{color:var(--bl);margin-right:10px;font-size:.7rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}
+.about>.glass{padding:30px}.uni{display:flex;gap:14px;align-items:center;margin-top:24px;padding:14px;border-radius:16px;border:1px solid var(--line)}
+.uni img{width:52px;height:52px;object-fit:contain;background:#fff;border-radius:12px;padding:4px}.uni small{display:block;color:var(--mut)}.uni b{color:var(--bl)}
+.about p{color:var(--mut);margin-bottom:14px}.about p strong{color:#fff;font-weight:500}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.tags span{padding:9px 14px;border-radius:12px;font-size:.88rem;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.25)}.tags i{color:var(--bl);margin-right:8px}
+/* Pengaturan khusus foto wisuda agar rapi dan mengisi kotak profil secara elegan */
+.grad-photo-box {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.grad-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+/* timeline */
+.tl{position:relative;padding-left:34px;display:grid;gap:22px}
+.tl::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--pu),var(--bl),transparent)}
+.job{padding:28px;position:relative}
+.job::before{content:"";position:absolute;left:-33px;top:34px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--bl);box-shadow:0 0 14px var(--bl)}
+/* Mengatur struktur header kartu magang/pengalaman kerja */
+.job-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Mengatur chip tanggal agar turun di bawah teks instansi dan menempel di pojok kanan */
+.job-h .date-chip {
+  margin-top: 4px;            /* Menyesuaikan sejajar dengan baris nama instansi */
+  margin-left: auto;          /* Memaksa posisi chip bergeser ke pojok kanan */
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+/* Container 2 gambar berjejer */
+.job .shots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Gambar full memenuhi seluruh area kotak tanpa bingkai/padding */
+.job .shots img {
+  width: 100%;
+  aspect-ratio: 1.414 / 1;    /* Rasio proporsional Sertifikat Horizontal (A4) */
+  object-fit: cover !important; /* Memaksa foto & sertifikat mengisi FULL seluruh kotak */
+  background: none !important;
+  padding: 0 !important;       /* Hilangkan padding agar tidak ada bingkai gelap */
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+/* Pastikan class .ct juga full tanpa background/padding */
+.job .shots img.ct {
+  object-fit: cover !important;
+  background: none !important;
+  padding: 0 !important;
+}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.job h4{font-size:.95rem;margin-bottom:8px;color:#d8b4fe}.job ul{padding-left:18px;color:var(--mut);font-size:.92rem}.job li{margin-bottom:6px}.job li strong{color:#fff;font-weight:500}
+.job .tags{margin-top:16px}.job .tags span{padding:3px 11px;font-size:.78rem;border-radius:99px}
+.shots{display:grid;gap:12px;margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.shots img{width:100%;height:190px;object-fit:cover;border-radius:14px;border:1px solid var(--line)}.shots img.ct{object-fit:contain;background:rgba(0,0,0,.35)}
+@media(max-width:700px){.cols{grid-template-columns:1fr}}
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.f{padding:9px 18px;border-radius:99px;border:1px solid var(--line);background:var(--glass);color:var(--mut);font:500 .88rem 'DM Sans';cursor:pointer;transition:.25s}
+.f:hover{color:#fff}.f.on{background:var(--grad);color:#08060f;border:0;font-weight:700;box-shadow:0 0 20px rgba(168,85,247,.45)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.pc{display:flex;flex-direction:column;overflow:hidden}
+.pc:hover{transform:translateY(-5px)}
+.pc-t{padding:24px 24px 6px}.pc-t h3{font-size:1.25rem;margin:12px 0 4px}.pc-t small{color:#7dd3fc}
+.pc-b{padding:10px 24px;color:var(--mut);font-size:.92rem;flex:1}.pc-b strong{color:#fff;font-weight:500}
+.pc .shots{margin:14px 0 0;grid-template-columns:1fr 1fr}.pc .shots img{height:auto;aspect-ratio:5/4}
+.pc-f{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:16px 24px;border-top:1px solid var(--line);font-size:.82rem;color:var(--mut)}
+.pc-f a{color:var(--bl);font-weight:700}.pc-f a:hover{text-decoration:underline}
+.pc[hidden]{display:none}
+/* Pengaturan khusus header Featured Projects agar 1 baris */
+.proj-header {
+  max-width: 1050px !important; /* Memperlebar batas maksimal area teks */
+}
+
+.proj-header h2 {
+  white-space: nowrap;          /* Memaksa judul tetap sejajar dalam 1 baris penuh */
+  font-size: clamp(1.4rem, 2.8vw, 2.3rem); /* Menyesuaikan ukuran font secara otomatis agar muat */
+}
+
+.proj-header p {
+  max-width: 100%;
+}
+
+/* Responsif untuk layar HP kecil */
+@media(max-width: 768px) {
+  .proj-header h2 {
+    white-space: normal;        /* Jika di layar HP yang terlalu kecil, biarkan membungkus normal */
+  }
+}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+/* org */
+.org{padding:26px}.org h3{font-size:1.1rem}.org small{color:#7dd3fc;display:block;margin:4px 0 12px}.org p,.org li{color:var(--mut);font-size:.92rem}.org ul{padding-left:18px}.org strong{color:#fff;font-weight:500}
+.org .ic{float:right;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(168,85,247,.15);color:#d8b4fe;margin-left:10px}
+/* Pengaturan khusus header Organization & Volunteer Work agar 1 baris */
+.org-header {
+  max-width: 950px !important; /* Memperlebar batas maksimal area teks */
+}
+
+.org-header h2 {
+  white-space: nowrap;          /* Memaksa judul tetap sejajar dalam 1 baris penuh */
+  font-size: clamp(1.5rem, 3.2vw, 2.3rem); /* Menyesuaikan ukuran font secara otomatis agar muat */
+}
+
+.org-header p {
+  max-width: 100%;
+}
+
+/* Responsif untuk layar HP kecil */
+@media(max-width: 768px) {
+  .org-header h2 {
+    white-space: normal;        /* Jika di layar HP yang terlalu kecil, biarkan membungkus normal */
+  }
+}
+/* certs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.cc{padding:10px;cursor:zoom-in;text-align:center}
+.cc:hover{transform:translateY(-4px)}
+.cc div{aspect-ratio:1.414/1;border-radius:12px;background:rgba(0,0,0,.4);display:grid;place-items:center;overflow:hidden}
+.cc.h div{aspect-ratio:1/1.414;background:rgba(251,191,36,.07)}
+.cc img{width:100%;height:100%;object-fit:contain}
+.cc p{font:700 .85rem/1.35 Sora;margin:12px 4px 2px}.cc span{font-size:.74rem;color:#7dd3fc}.cc.h span{color:#fbbf24}
+/* Pengaturan khusus header sertifikat agar 1 baris & deskripsi menyesuaikan lebar */
+.cert-header {
+  max-width: 900px !important; /* Memperlebar batas kotak teks */
+}
+
+.cert-header h2 {
+  white-space: nowrap;          /* Memaksa teks judul tetap dalam 1 baris */
+  font-size: clamp(1.5rem, 3.2vw, 2.3rem); /* Menyesuaikan ukuran font secara responsif agar tidak turun baris */
+}
+
+.cert-header p {
+  max-width: 100%;              /* Membuat deskripsi mengisi ruang penuh sesuai padding */
+  padding: 0 10px;
+}
+
+/* Responsif untuk layar HP kecil agar tetap rapi */
+@media(max-width: 768px) {
+  .cert-header h2 {
+    white-space: normal;        /* Jika di HP layarnya terlalu kecil, biarkan membungkus normal agar tidak terpotong layar */
+  }
+}
+dialog{border:0;background:none;max-width:92vw;max-height:92vh;padding:0;color:#fff;margin:auto}
+dialog::backdrop{background:rgba(5,4,10,.88);backdrop-filter:blur(6px)}
+dialog img{max-height:82vh;border-radius:14px;box-shadow:0 0 60px rgba(168,85,247,.4);margin:auto}
+dialog p{text-align:center;margin-top:12px;font-weight:700}
+/* Utilitas Rata Tengah untuk Tab Sertifikat */
+.justify-center {
+  justify-content: center;
+}
+/* skills */
+/* Header Rata Tengah */
+.style-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--bl);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+.h-line {
+  width: 50px;
+  height: 3px;
+  background: var(--grad);
+  margin: 10px auto 14px;
+  border-radius: 99px;
+}
+
+/* Styling Utama Kotak Keterampilan */
+.sk-box {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Header di dalam kotak */
+.sk-header {
+  margin-bottom: 0 !important;
+  max-width: 700px;
+}
+
+/* Konten di dalam kotak (2 kolom) */
+.sk-grid-content {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.sk-title {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsif untuk layar HP/Tablet */
+@media(max-width: 860px) {
+  .sk-box {
+    padding: 26px;
+    gap: 32px;
+  }
+  .sk-grid-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .sg {
+    grid-template-columns: 1fr;
+  }
+}
+/* Sub-grid Tools & Software */
+.sg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+.sg h4 {
+  font-size: 0.76rem;
+  color: var(--mut);
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.sg > div {
+  padding-left: 14px;
+  border-left: 2px solid var(--pu);
+}
+.sg > div:nth-child(2) { border-color: var(--bl); }
+.sg > div:nth-child(3) { border-color: var(--pk); }
+.sg > div:nth-child(4) { border-color: #facc15; }
+
+/* Tag / Chip Pills Style */
+.tl2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tl2 span {
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--line);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: .25s;
+  display: inline-flex;
+  align-items: center;
+}
+.tl2 span:hover {
+  border-color: var(--pu);
+  transform: translateY(-2px);
+}
+.tl2 i {
+  margin-right: 8px;
+}
+
+/* Technical Expertise Chips Layout */
+.ex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+.ex .chip {
+  padding: 9px 16px;
+  font-size: 0.86rem;
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Responsive view */
+@media(max-width: 860px) {
+  .sk-box {
+    grid-template-columns: 1fr;
+    padding: 26px;
+    gap: 32px;
+  }
+  .sg {
+    grid-template-columns: 1fr;
+  }
+}
+/* contact */
+.ct {
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.ct::before {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  right: -90px;
+  top: -120px;
+  background: radial-gradient(var(--pu), transparent 70%);
+  opacity: .35;
+}
+.ct > * {
+  position: relative;
+}
+
+/* Header rata tengah sempurna */
+.ct-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 32px;
+}
+.ct-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 12px;
+}
+.ct-header p {
+  color: var(--mut);
+  font-size: 0.98rem;
+}
+.ct-header p strong {
+  color: #fff;
+}
+
+/* Layout 2 kolom (Kontak & Form) presisi sejajar */
+.ct-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.cl {
+  display: grid;
+  gap: 10px;
+}
+.cl a, .cl div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .03);
+  font-size: .92rem;
+  transition: .25s;
+  overflow-wrap: anywhere;
+}
+.cl a:hover {
+  border-color: var(--bl);
+  transform: translateX(4px);
+}
+.cl i {
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+label {
+  font-size: .82rem;
+  font-weight: 500;
+  color: var(--mut);
+  display: grid;
+  gap: 6px;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, .35);
+  color: #fff;
+  font: inherit;
+  transition: .25s;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: var(--bl);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, .2);
+}
+
+@media(max-width:860px) {
+  .ct-body {
+    grid-template-columns: 1fr;
+  }
+  .ct {
+    padding: 26px;
+  }
+}
+.cl{display:grid;gap:10px}.cl a,.cl div{display:flex;gap:12px;align-items:center;padding:12px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:.92rem;transition:.25s;overflow-wrap:anywhere}
+.cl a:hover{border-color:var(--bl);transform:translateX(4px)}.cl i{width:20px;text-align:center;font-size:1.1rem}
+form{display:grid;gap:14px;align-content:start}label{font-size:.82rem;font-weight:500;color:var(--mut);display:grid;gap:6px}
+input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(0,0,0,.35);color:#fff;font:inherit;transition:.25s}
+input:focus,textarea:focus{outline:0;border-color:var(--bl);box-shadow:0 0 0 3px rgba(56,189,248,.2)}
+@media(max-width:860px){.ct{grid-template-columns:1fr;padding:26px}}
+footer{text-align:center;padding:36px 20px;color:var(--mut);font-size:.85rem;border-top:1px solid var(--line)}
+#toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,90px);padding:12px 22px;border-radius:14px;background:rgba(14,11,26,.95);border:1px solid var(--bl);transition:.4s;z-index:90}#toast.show{transform:translate(-50%,0)}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.js .rv.vis{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv,.in{opacity:1;transform:none}}
