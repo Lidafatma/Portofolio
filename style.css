@@ -1323,3 +1323,10 @@ input:focus, textarea:focus {
     font-size: 0.58rem !important;
   }
 }
+/* Mencegah halaman bergeser ke kanan dan kiri */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
