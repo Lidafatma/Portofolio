@@ -12,8 +12,7 @@ section{padding:84px 0}
 .glow{position:relative;transition:transform .3s,border-color .3s,box-shadow .3s}
 .glow:hover{border-color:rgba(168,85,247,.55);box-shadow:0 0 0 1px rgba(168,85,247,.3),0 12px 50px -12px rgba(168,85,247,.45)}
 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-/* KODE BARU (Ukuran Header Section Lebih Kecil & Proporsional) */
-.sec-h{margin-bottom:40px;max-width:640px}.sec-h h2{font-size:clamp(1.5rem, 3vw, 2.1rem)}.sec-h p{color:var(--mut);margin-top:10px}
+.sec-h{margin-bottom:40px;max-width:640px}.sec-h h2{font-size:clamp(1.8rem,4vw,2.6rem)}.sec-h p{color:var(--mut);margin-top:10px}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:14px;font-weight:700;font-size:.95rem;border:1px solid var(--line);background:var(--glass);transition:.3s;cursor:pointer;color:var(--tx);font-family:inherit}
 .btn:hover{transform:translateY(-2px);border-color:var(--bl)}
 .btn.pri{background:var(--grad);border:0;color:#08060f;box-shadow:0 0 28px rgba(168,85,247,.5)}
@@ -38,8 +37,7 @@ header{position:fixed;top:14px;left:0;right:0;z-index:50;padding:0 14px}
 .badge{display:inline-flex;align-items:center;gap:9px;padding:7px 16px;border-radius:99px;font-size:.85rem;color:#d8b4fe;border:1px solid rgba(168,85,247,.4);background:rgba(168,85,247,.1)}
 .badge i{width:8px;height:8px;border-radius:50%;background:var(--pu);box-shadow:0 0 10px var(--pu);animation:pl 2s infinite}
 @keyframes pl{50%{opacity:.35}}
-/* KODE BARU (Ukuran Judul Utama Lebih Kecil & Pas) */
-h1{font-size:clamp(2rem, 5vw, 3.5rem);font-weight:800;margin:18px 0 14px}
+h1{font-size:clamp(2.5rem,7vw,4.8rem);font-weight:800;margin:22px 0 18px}
 .lead{color:var(--mut);font-size:1.08rem;max-width:600px}.lead strong{color:#fff}.lead b{color:#d8b4fe;font-weight:500}
 .acts{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
@@ -149,8 +147,8 @@ h1{font-size:clamp(2rem, 5vw, 3.5rem);font-weight:800;margin:18px 0 14px}
 }
 
 .proj-header h2 {
-  white-space: nowrap;
-  font-size: clamp(1.3rem, 2.4vw, 2.0rem); /* Diperkecil dari 1.4rem - 2.3rem */
+  white-space: nowrap;          /* Memaksa judul tetap sejajar dalam 1 baris penuh */
+  font-size: clamp(1.4rem, 2.8vw, 2.3rem); /* Menyesuaikan ukuran font secara otomatis agar muat */
 }
 
 .proj-header p {
@@ -173,8 +171,8 @@ h1{font-size:clamp(2rem, 5vw, 3.5rem);font-weight:800;margin:18px 0 14px}
 }
 
 .org-header h2 {
-  white-space: nowrap;
-  font-size: clamp(1.3rem, 2.5vw, 2.0rem); /* Diperkecil dari 1.5rem - 2.3rem */
+  white-space: nowrap;          /* Memaksa judul tetap sejajar dalam 1 baris penuh */
+  font-size: clamp(1.5rem, 3.2vw, 2.3rem); /* Menyesuaikan ukuran font secara otomatis agar muat */
 }
 
 .org-header p {
@@ -202,8 +200,8 @@ h1{font-size:clamp(2rem, 5vw, 3.5rem);font-weight:800;margin:18px 0 14px}
 }
 
 .cert-header h2 {
-  white-space: nowrap;
-  font-size: clamp(1.3rem, 2.5vw, 2.0rem); /* Diperkecil dari 1.5rem - 2.3rem */
+  white-space: nowrap;          /* Memaksa teks judul tetap dalam 1 baris */
+  font-size: clamp(1.5rem, 3.2vw, 2.3rem); /* Menyesuaikan ukuran font secara responsif agar tidak turun baris */
 }
 
 .cert-header p {
@@ -484,3 +482,150 @@ footer{text-align:center;padding:36px 20px;color:var(--mut);font-size:.85rem;bor
 .js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
 .js .rv.vis{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv,.in{opacity:1;transform:none}}
+/* =====================================================================
+   MOBILE REFINEMENTS (iPhone / Android)
+   Semua aturan di bawah ini HANYA aktif di layar kecil (media query),
+   jadi tampilan desktop tidak berubah sama sekali.
+   Letakkan blok ini di PALING BAWAH style.css.
+   ===================================================================== */
+
+/* ---------- Tablet & ke bawah: pengaman anti-overflow ---------- */
+@media(max-width:860px){
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  html,body{max-width:100%;overflow-x:hidden}
+  /* grid/flex child boleh menyusut supaya teks panjang tidak mendorong layar */
+  .hero>*,.about>*,.cols>*,.grid2>*,.sk-grid-content>*,.sg>div,.ct-body>*{min-width:0}
+}
+
+/* ---------- Mobile (iPhone 12–16, Android umum): <= 600px ---------- */
+@media(max-width:600px){
+  .wrap{padding:0 16px}
+  section{padding:60px 0;overflow-x:clip}
+
+  /* Judul: h1 + semua h2 header section, proporsional via clamp */
+  h1{font-size:clamp(1.9rem,8.6vw,2.5rem);line-height:1.15;margin:16px 0 14px}
+  .sec-h h2,.ct-header h2,.proj-header h2,.org-header h2,.cert-header h2{
+    font-size:clamp(1.4rem,6.4vw,1.85rem);
+    line-height:1.25;
+    white-space:normal;
+    text-wrap:balance;
+    overflow-wrap:anywhere;
+  }
+  .sec-h{margin-bottom:28px}
+  .sec-h p,.cert-header p{font-size:.92rem;padding:0}
+  .sub-badge{font-size:.7rem}
+
+  /* Navbar */
+  header{top:10px;padding:0 10px}
+  .nav{padding:6px 8px 6px 10px}
+  .brand img{width:32px;height:32px}
+  #mb{padding:8px 12px;min-width:44px;min-height:40px}
+  .links{top:58px;left:10px;right:10px;max-height:calc(100vh - 84px);max-height:calc(100svh - 84px);overflow-y:auto}
+
+  /* Hero */
+  #home{min-height:auto;padding:100px 0 48px}
+  .hero{gap:28px}
+  .badge{font-size:.76rem;padding:7px 14px;gap:8px;line-height:1.4;border-radius:16px}
+  .badge i{flex-shrink:0}
+  .lead{font-size:.96rem;line-height:1.65}
+  .acts{gap:10px;margin:22px 0}
+  .acts .btn{flex:1 1 calc(50% - 5px);justify-content:center;text-align:center;padding:12px 8px;font-size:.86rem;gap:8px;min-width:0}
+  .stats{gap:10px}
+  .stat{padding:14px 12px}
+  .stat b{font-size:1.45rem}
+  .stat span{display:block;font-size:.74rem;line-height:1.35}
+  .photo{max-width:230px}
+  .photo::before{inset:-8px;filter:blur(20px)}
+  .photo .glass{padding:10px}
+
+  /* Marquee */
+  .mq{padding:11px 0}
+  .mq div{gap:30px;font-size:.8rem}
+
+  /* Tentang saya (override inline padding) */
+  .about{gap:16px}
+  .about>.glass{padding:20px!important}
+  .about .u-card{padding:12px!important;gap:12px!important}
+  .about .u-card img{width:44px!important;height:44px!important;flex-shrink:0}
+  .about .u-card>div{min-width:0}
+  .about .u-card h4{font-size:.92rem!important}
+  .about p{font-size:.92rem}
+  .about p[style]{font-size:1rem!important}
+  .tags{gap:8px;margin-top:16px}
+  .tags span{padding:8px 12px;font-size:.82rem}
+
+  /* Timeline: Magang & Pengalaman Kerja */
+  .tl{padding-left:24px;gap:16px}
+  .tl::before{left:5px}
+  .job{padding:18px!important}
+  .job::before{left:-24px;top:24px;width:12px;height:12px;border-width:2px}
+  .job-h{flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:16px}
+  .job-h>div{min-width:0}
+  .job-h .date-chip{margin:0;white-space:normal;flex-shrink:1;font-size:.74rem;line-height:1.4;border-radius:14px}
+  .job h3,.job-h h3{font-size:1.1rem!important}
+  .job-h p{font-size:.9rem;line-height:1.5}
+  .job>p{font-size:.92rem;margin-bottom:16px!important}
+  .cols{gap:14px}
+  .cols>.glass{padding:16px!important;border-radius:16px}
+  .job ul{padding-left:16px;font-size:.88rem}
+  .job .tags{margin-top:14px}
+  .job .shots{grid-template-columns:1fr!important;gap:12px;margin-top:16px}
+
+  /* Proyek */
+  .filters{gap:8px;margin-bottom:20px}
+  .f{padding:8px 14px;font-size:.82rem}
+  .grid2{gap:16px}
+  .pc-t{padding:18px 18px 4px}
+  .pc-t h3{font-size:1.08rem}
+  .pc-t .chip{white-space:normal;line-height:1.4;border-radius:14px}
+  .pc-b{padding:8px 18px;font-size:.88rem}
+  .pc .shots{gap:8px}
+  .pc-f{padding:14px 18px;flex-wrap:wrap;row-gap:8px}
+
+  /* Organisasi */
+  .org{padding:20px}
+  .org h3{font-size:1.02rem}
+  .org .ic{width:38px;height:38px}
+
+  /* Sertifikat & HAKI: 2 kolom thumbnail, klik untuk perbesar */
+  .tabs{gap:8px;margin-bottom:18px}
+  .cg{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .cc{padding:8px;border-radius:16px}
+  .cc p{font-size:.78rem;margin:10px 2px 2px}
+  .cc span{font-size:.68rem}
+  dialog{max-width:94vw;max-height:94vh}
+  dialog img{max-width:100%;width:auto;max-height:75vh;max-height:75svh;object-fit:contain}
+
+  /* Keahlian */
+  .sk-box{padding:20px;gap:26px}
+  .sk-grid-content{gap:26px}
+  .sk-title{font-size:1.05rem;margin-bottom:16px}
+  .sg{gap:20px}
+  .tl2 span{padding:7px 11px;font-size:.82rem}
+  .ex .chip{padding:7px 12px;font-size:.8rem}
+
+  /* Kontak */
+  .glass.ct{padding:20px}
+  .ct::before{width:240px;height:240px;right:-80px;top:-90px}
+  .ct-header{margin-bottom:22px}
+  .ct-header p{font-size:.92rem}
+  .ct-body{gap:22px}
+  .cl a,.cl div{padding:11px 12px;font-size:.88rem;gap:10px;min-width:0}
+  .cl i{flex-shrink:0}
+  input,textarea{font-size:16px} /* cegah auto-zoom Safari iOS saat fokus */
+
+  footer{padding:28px 16px;font-size:.8rem}
+  #toast{width:max-content;max-width:calc(100vw - 32px);text-align:center;font-size:.88rem;bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+
+/* ---------- Layar sangat kecil (iPhone SE / mini): <= 380px ---------- */
+@media(max-width:380px){
+  .wrap{padding:0 14px}
+  .acts .btn{flex:1 1 100%}
+  .job{padding:16px!important}
+  .about>.glass,.org,.sk-box,.glass.ct{padding:16px!important}
+  .stat b{font-size:1.3rem}
+  .f{padding:7px 12px;font-size:.78rem}
+  .pc-t,.pc-b,.pc-f{padding-left:14px;padding-right:14px}
+  .cc p{font-size:.74rem}
+}
