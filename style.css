@@ -39,7 +39,7 @@ header{position:fixed;top:14px;left:0;right:0;z-index:50;padding:0 14px}
 .badge i{width:8px;height:8px;border-radius:50%;background:var(--pu);box-shadow:0 0 10px var(--pu);animation:pl 2s infinite}
 @keyframes pl{50%{opacity:.35}}
 /* KODE BARU (Ukuran Judul Utama Lebih Kecil & Pas) */
-h1{font-size:clamp(2rem, 5vw, 3.4rem);font-weight:800;margin:18px 0 14px}
+h1{font-size:clamp(2rem, 5vw, 3.5rem);font-weight:800;margin:18px 0 14px}
 .lead{color:var(--mut);font-size:1.08rem;max-width:600px}.lead strong{color:#fff}.lead b{color:#d8b4fe;font-weight:500}
 .acts{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
